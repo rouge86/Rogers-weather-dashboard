@@ -1,0 +1,137 @@
+/* * {
+    border: 1px solid black;
+} */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family:roboto;
+}
+
+
+header {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #023362; 
+}
+
+    .morning {
+    background-color:rgba(255, 157, 0, 0.856);
+  }
+  
+  .afternoon {
+    background-color:rgba(255, 217, 0, 0.636);
+  }
+  
+  .night {
+    background-color:rgba(32, 27, 3, 0.764);
+  } 
+
+
+header h1 {
+    font-weight: 700;
+    padding: 20px;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    color: whitesmoke;
+}
+
+aside {
+    background-color: #044f97;
+    border-radius: 15px;
+    border: 1px solid #023362;
+    height: 94vh;
+}
+.jumbotron {
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.display-3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding:0 20px;
+    line-height: 4.5rem;
+}
+
+
+.today {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.current {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 100%;
+}
+.table th {
+    white-space: nowrap;
+}
+.table td {
+    width: 75%;
+}
+
+.container {
+    margin: 2rem auto;
+}
+.card {
+    display: inline-block;
+    width: 100%;
+    border-radius: 15px;
+}
+.card-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.historyBtn {
+    width: 100%;
+    background-image: linear-gradient(var(--blue), #044f97);
+}
+
+.searchHistoryEl {
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #arrowImg {
+        display: none;
+    }
+    aside {
+        height:auto;
+    }
+
+    body {
+        height: auto;
+        text-align: center;
+    }
+
+    .forecast {
+        margin-top: 7rem;
+    }
+
+    .today {
+        justify-content: center;
+    }
+}
